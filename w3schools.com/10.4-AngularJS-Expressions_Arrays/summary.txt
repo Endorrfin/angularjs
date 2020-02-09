@@ -1,13 +1,3 @@
-AngularJS Applications
-AngularJS modules define AngularJS applications.
-
-AngularJS controllers control AngularJS applications.
-
-The ng-app directive defines the application, the ng-controller directive defines the controller. 
-
-
-
-
 AngularJS Expressions vs. JavaScript Expressions
 Like JavaScript expressions, AngularJS expressions can contain literals, operators, and variables.
 

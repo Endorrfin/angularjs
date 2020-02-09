@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="firstName='John'; lastName='Doe'">
+
+<!-- AngularJS strings are like JavaScript strings: -->
+<p>The full name is: {{ firstName + " " + lastName }}</p>
+
+
+<!-- Same example using ng-bind: -->
+<p>The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+
+</div>
+
+</body>
+</html>

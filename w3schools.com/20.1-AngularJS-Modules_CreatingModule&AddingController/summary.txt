@@ -1,0 +1,11 @@
+AngularJS Modules
+An AngularJS module defines an application.
+
+The module is a container for the different parts of an application.
+
+The module is a container for the application controllers.
+
+Controllers always belong to a module.
+
+Creating a Module
+A module is created by using the AngularJS function angular.module

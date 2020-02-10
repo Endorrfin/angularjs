@@ -1,0 +1,34 @@
+AngularJS Modules
+An AngularJS module defines an application.
+
+The module is a container for the different parts of an application.
+
+The module is a container for the application controllers.
+
+Controllers always belong to a module.
+
+Creating a Module
+A module is created by using the AngularJS function angular.module
+
+
+
+
+Adding a Directive
+AngularJS has a set of built-in directives which you can use to add functionality to your application.
+
+For a full reference, visit our AngularJS directive reference.
+
+In addition you can use the module to add your own directives to your applications:
+
+
+
+
+Functions can Pollute the Global Namespace
+Global functions should be avoided in JavaScript. They can easily be overwritten or destroyed by other scripts.
+
+AngularJS modules reduces this problem, by keeping all functions local to the module.
+
+When to Load the Library
+While it is common in HTML applications to place scripts at the end of the <body> element, it is recommended that you load the AngularJS library either in the <head> or at the start of the <body>.
+
+This is because calls to angular.module can only be compiled after the library has been loaded.

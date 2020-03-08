@@ -1,20 +1,34 @@
 <h1>Hello Angular world</h1>
 
-<p>{{ title }}</p>
-<p><strong>{{ number - 2 }}</strong></p>
-<p><strong>{{ arr }}</strong></p>
-<p><strong>{{ obj }}</strong></p>
-<p><strong>{{ obj.b.c }}</strong></p>
-<p><strong>{{ 10 + 5 }}</strong></p>
-<p><strong>{{ 'Hello' + 'World' }}</strong></p>
+<!--<p>{{ title }}</p>-->
+<!--<p><strong>{{ number - 2 }}</strong></p>-->
+<!--<p><strong>{{ arr }}</strong></p>-->
+<!--<p><strong>{{ obj }}</strong></p>-->
+<!--<p><strong>{{ obj.b.c }}</strong></p>-->
+<!--<p><strong>{{ 10 + 5 }}</strong></p>-->
+<!--<p><strong>{{ 'Hello' + 'World' }}</strong></p>-->
 
-<app-post></app-post>
 <!--<app-post></app-post>-->
 
+<button (click)="onClick()">Click me!</button>
+
+
+<input
+  type="text"
+  (keyup.enter)="onInput($event)"
+  (blur)="onBlur(myInput.value)"
+  #myInput
+>
+<p><strong>{{inputValue}}</strong></p>
+
+
 <hr>
+<app-post></app-post>
 
-<img [src]="img" alt="logo react">
+<!--<img [src]="img" alt="logo react">-->
 
+<hr>
 <app-post4></app-post4>
+
 
 

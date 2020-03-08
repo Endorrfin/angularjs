@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "Angular8ForBeginners": {
+    "angular-basics": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular8ForBeginners",
+            "outputPath": "dist/angular-basics",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular8ForBeginners:build"
+            "browserTarget": "angular-basics:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular8ForBeginners:build:production"
+              "browserTarget": "angular-basics:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular8ForBeginners:build"
+            "browserTarget": "angular-basics:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular8ForBeginners:serve"
+            "devServerTarget": "angular-basics:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular8ForBeginners:serve:production"
+              "devServerTarget": "angular-basics:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Angular8ForBeginners"
+  "defaultProject": "angular-basics"
 }

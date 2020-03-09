@@ -9,5 +9,5 @@ export class AppComponent {
 
   // backgroundToggle = false;
 
-  toggle = false;
+  toggle: any = false;
 }

@@ -37,13 +37,27 @@
 
 
 <!-- ============ VARIANT II ============= -->
+<!--<button (click)="toggle = !toggle">Toggle</button>-->
+
+<!--<p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ex.</p>-->
+
+<!--<ng-template #blueP>-->
+<!--  <p *ngIf="!toggle" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam omnis placeat.</p>-->
+<!--</ng-template>-->
+
+
+
+
+<!-- ============ VARIANT III ============= -->
 <button (click)="toggle = !toggle">Toggle</button>
+<button (click)="toggle = 111">Set 111</button>
 
-<p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ex.</p>
+<div [ngSwitch]="toggle">
+  <p *ngSwitchCase="true" class="red">Lorem ipsum dolor sit amet.</p>
+  <p *ngSwitchCase="false" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eveniet praesentium repellat ullam ut!</p>
+  <p *ngSwitchDefault>Lorem someting</p>
 
-<ng-template #blueP>
-  <p *ngIf="!toggle" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam omnis placeat.</p>
-</ng-template>
+</div>
 
 
 

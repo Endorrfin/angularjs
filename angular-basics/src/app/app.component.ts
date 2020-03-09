@@ -6,9 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = '';
 
-  onInput(event: any) {
-    this.title = event.target.value
-  }
+  backgroundToggle = false;
 }

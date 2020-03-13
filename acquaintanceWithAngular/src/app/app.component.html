@@ -1,9 +1,14 @@
 
 <header>
-  <img src="app.img/angular.svg">
+  <img src="./">
   <h1>{{ title }}</h1>
 </header>
 <main>
+  <form class="todo-form" (ngSubmit)="create(); todoForm.reset()" #todoForm="ngForm">
+    <input type="text" name="title" [(ngModel)]="newTodoTitle" placeholder="Что нужно делать?" required>
+    <button type="submit" [disabled]="todoForm.form.invalid">Добавить</button>
+  </form>
+
   <section class="todo-list" *ngIf="todos.length > 0">
 <!--    <div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed">-->
     <div class="todo-item" *ngFor="let todo of todos" [ngClass]="{'completed': todo.completed}">

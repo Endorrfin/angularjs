@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from "../hero";
-import { HEROES } from "../mock-heroes";
+import { HeroService } from "../hero.service";
 
 @Component({
   selector: 'app-heroes',
@@ -12,7 +12,7 @@ export class HeroesComponent implements OnInit {
   public selectedHero: Hero;
 
   // зона видимости TypeScript - указываем, что heroes - это массив класса Hero
-  public heroes: Hero[] = HEROES;
+  public heroes: Hero[];
 
   // метод onSelect для функционала клика в списке героев
   // selectedHero - герой на которого кликнули
@@ -20,11 +20,17 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
   }
 
+  // heroService - имя переменной, которое придумываем самостоятельно, но чаще все принято использовать
+  // имя аналогичное имени сервиса но с маленькой буквы.
+  constructor(private heroService: HeroService) { }
 
-
-  constructor() { }
+  private getHeroes(): void {
+    this.heroService.getHeroes()
+      .subscribe(heroes => this.heroes = heroes);
+  }
 
   ngOnInit(): void {
+    this.getHeroes();
   }
 
 }

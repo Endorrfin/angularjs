@@ -1,18 +1,22 @@
 export const todos = [
   {
-    title: 'Изучить JavaScript',
+    title: 'create new repositories TODO App on gitHub',
     completed: true
   },
   {
-    title: 'Изучить Angular',
+    title: 'create new branch',
     completed: false
   },
   {
-    title: 'Написать приложение',
+    title: 'create markup for to-do list in html',
     completed: false
   },
   {
-    title: 'Залить приложение на gitHub',
+    title: 'create components',
+    completed: false
+  },
+  {
+    title: 'create services',
     completed: false
   }
 ];

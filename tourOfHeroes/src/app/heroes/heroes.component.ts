@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from "./hero";
+import { Hero } from "../hero";
 import { HEROES } from "../mock-heroes";
 
 @Component({
@@ -15,6 +15,7 @@ export class HeroesComponent implements OnInit {
   public heroes: Hero[] = HEROES;
 
   // метод onSelect для функционала клика в списке героев
+  // selectedHero - герой на которого кликнули
   public onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }

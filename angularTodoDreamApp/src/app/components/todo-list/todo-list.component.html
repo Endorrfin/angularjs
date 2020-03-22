@@ -1,10 +1,28 @@
 
 <!--<img class="logo" width="300" alt="Angular logo" src="#">-->
 
+<!-- INPUT-->
 <input type="text" class="todo-input" placeholder="What need to be done"
        [(ngModel)]="todoTitle"
        (keyup.enter)="addTodo()">
 
+<!-- DIFFERENT FILTERS -->
+<div class="extra-container">
+  <div>
+    <button class="Active">All</button>
+    <button>Active</button>
+    <button>Completed</button>
+  </div>
+
+  <div *ngIf="atLeastOneCompleted()">
+    <button (click)="clearCompleted()">Clear completed</button>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- TODO LIST -->
 <div class="todo-item" *ngFor="let todo of todos">
   <div class="todo-item-left">
     <input type="checkbox" [(ngModel)]="todo.completed">
@@ -20,22 +38,14 @@
 </div>
 
 
+<!-- CHECK All -->
 <div class="extra-container">
-  <div><label><input type="checkbox">Check All</label></div>
-  <div>4 items left</div>
+  <div><label><input type="checkbox" (change)="checkAllTodos()">Check All</label></div>
+  <div> {{ remaining() }} items left</div>
 </div>
 
-<div class="extra-container">
-  <div>
-    <button class="Active">All</button>
-    <button>Active</button>
-    <button>Completed</button>
-  </div>
 
-  <div>
-    <button>Clear completed</button>
-  </div>
-</div>
+
 
 
 

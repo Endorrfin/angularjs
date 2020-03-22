@@ -10,10 +10,12 @@ export class TodoListComponent implements OnInit {
   todos: Todo[];
   todoTitle: string;
   idForTodo: number;
+  beforeEditCash: string;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.beforeEditCash = '';
     this.idForTodo = 4;
     this.todoTitle = '';
     this.todos = [
@@ -51,6 +53,23 @@ export class TodoListComponent implements OnInit {
 
     this.todoTitle = '';
     this.idForTodo++;
+  }
+
+  editTodo(todo: Todo): void {
+    this.beforeEditCash = todo.title;
+    todo.editing = true;
+  }
+
+  doneEdit(todo: Todo): void {
+    if(todo.title.trim().length === 0) {
+      todo.title = this.beforeEditCash;
+    }
+    todo.editing = false;
+  }
+
+  cancelEdit(todo: Todo): void {
+    todo.title = this.beforeEditCash;
+    todo.editing = false;
   }
 
   deleteTodo(id: number): void {

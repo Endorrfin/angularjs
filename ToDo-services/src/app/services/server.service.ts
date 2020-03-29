@@ -32,6 +32,12 @@ export class ServerService {
     return this.http.get(this.configURL)
   }
 
+  addTask(task: Task) {
+    return this.http.post(this.configURL, {
+      body: task
+    })
+  }
+
   deleteTask(id: number) {
     return this.http.delete(this.configURL + id);
   }

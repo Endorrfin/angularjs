@@ -7,6 +7,7 @@ import { TodoFormComponent } from './components/todo-form/todo-form.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { ServerService } from './services/server.service';
 import { HttpClientModule} from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule} from "@angular/common/http";
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]

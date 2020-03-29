@@ -1,10 +1,10 @@
 
 <!--Прописываем 1 карточку для 1-й задачи-->
-<div class="card mt-3">
+<div class="card mt-3" [ngClass]="{'bg-success text-white' : task.completed}">
   <div class="card-body">
       <p class="card-text">{{task.title}}</p>
       <button class="btn btn-primary">Edit</button>
-      <button class="btn btn-danger">Del</button>
+      <button class="btn btn-danger" (click)="deleteOneTask() ">Del</button>
       <button class="btn btn-primary">Add</button>
   </div>
 </div>

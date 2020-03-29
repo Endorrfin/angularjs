@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+// import { ServerService } from "../../services/server.service";
+import { Task } from '../../shared/task';
 
 @Component({
   selector: 'app-todo-item',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit {
+  @Input() task: Task;
 
   constructor() { }
 

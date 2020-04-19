@@ -1,0 +1,477 @@
+
+
+Section 1: Getting Started
+
+1. Course Introduction
+1min
+
+2. What is Angular?
+2min
+
+3. Join our Online Learning Community
+1min
+
+4. Angular vs Angular 2 vs Angular 9
+4min
+
+5. CLI Deep Dive & Troubleshooting
+1min
+
+6. Project Setup and First App
+8min
+
+7. Editing the First App
+10min
+
+8. The Course Structure
+4min
+
+9. How to get the Most out of the Course
+2min
+
+10. What is TypeScript?
+2min
+
+11. A Basic Project Setup using Bootstrap
+4min
+    npm install --save bootstrap@3  -> "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+12. Where to find the Course Source
+1min
+
+
+
+ Section 2: The Basics
+ 28 / 33|1hr 54min
+
+ 13. Module Introduction
+ 1min
+
+ 14. How an Angular App gets Loaded and
+ Started
+ 7min
+
+ 15. Components are Important!
+ 3min
+
+ 16. Creating a New Component
+ 7min
+
+ 17. Understanding the Role of AppModule
+ and Component Declaration
+ 5min
+
+ 18. Using Custom Components
+ 1min
+
+ 19. Creating Components with the CLI &
+ Nesting Components
+ 4min
+
+ 20. Working with Component Templates
+ 3min
+
+ 21. Working with Component Styles
+ 4min
+
+ 22. Fully Understanding the Component
+ Selector
+ 4min
+
+ Assignment 1: Practicing Components
+
+ 23. [OPTIONAL] Assignment Solution
+ 7min
+
+ 24. What is Databinding?
+ 3min
+
+ 25. String Interpolation
+ 5min
+
+ 26. Property Binding
+ 7min
+
+ 27. Property Binding vs String
+ Interpolation
+ 3min
+
+ 28. Event Binding
+ 4min
+
+ 29. Bindable Properties and Events
+ 1min
+
+ 30. Passing and Using Data with Event
+ Binding
+ 5min
+
+ 31. Important: FormsModule is Required
+ for Two-Way-Binding!
+ 1min
+
+ 32. Two-Way-Databinding
+ 3min
+
+ 33. Combining all Forms of Databinding
+ 2min
+
+ Assignment 2: Practicing Databinding
+
+ 34. [OPTIONAL] Assignment Solution
+ 5min
+
+ 35. Understanding Directives
+ 2min
+
+ 36. Using ngIf to Output Data
+ Conditionally
+ 4min
+
+ 37. Enhancing ngIf with an Else Condition
+ 3min
+
+ 38. Styling Elements Dynamically with
+ ngStyle
+ 5min
+
+ 39. Applying CSS Classes Dynamically
+ with ngClass
+ 3min
+
+ 40. Outputting Lists with ngFor
+ 4min
+
+ Assignment 3: Practicing Directives
+
+ 41. [OPTIONAL] Assignment Solution
+ 7min
+
+ 42. Getting the Index when using ngFor
+ 3min
+
+
+
+ Section 3: Course Project - The
+ Basics
+ 17 / 17|1hr 4min
+
+ 43. Project Introduction
+ 1min
+
+ 44. Planning the App
+ 6min
+
+ 45. Installing Bootstrap Correctly
+ 1min
+
+ 46. Setting up the Application
+ 5min
+
+ 47. Creating the Components
+ 10min
+
+ 48. Using the Components
+ 3min
+
+ 49. Adding a Navigation Bar
+ 5min
+
+ 50. Alternative Non-Collapsable
+ Navigation Bar
+ 1min
+
+ 51. Creating a "Recipe" Model
+ 5min
+
+ 52. Adding Content to the Recipes
+ Components
+ 8min
+
+ 53. Outputting a List of Recipes with
+ ngFor
+ 5min
+
+ 54. Displaying Recipe Details
+ 6min
+
+ 55. Working on the
+ ShoppingListComponent
+ 2min
+
+ 56. Creating an "Ingredient" Model
+ 3min
+
+ 57. Creating and Outputting the Shopping
+ List
+ 2min
+
+ 58. Adding a Shopping List Edit Section
+ 3min
+
+ 59. Wrap Up & Next Steps
+ 1min
+
+
+
+Section 4: Debugging
+3 / 3|12min
+
+60. Understanding Angular Error
+Messages
+5min
+
+61. Debugging Code in the Browser Using
+Sourcemaps
+6min
+
+62. Using Augury to Dive into Angular
+Apps
+2min
+
+
+
+Section 5: Components &
+Databinding Deep Dive
+18 / 22|1hr 25min
+
+63. Module Introduction
+1min
+
+64. Splitting Apps into Components
+6min
+
+65. Property & Event Binding Overview
+2min
+
+66. Binding to Custom Properties
+6min
+
+67. Assigning an Alias to Custom
+Properties
+2min
+
+68. Binding to Custom Events
+9min
+
+69. Assigning an Alias to Custom Events
+1min
+
+70. Custom Property and Event Binding
+Summary
+2min
+
+71. Understanding View Encapsulation
+5min
+
+72. More on View Encapsulation
+3min
+
+73. Using Local References in Templates
+5min
+
+74. @ViewChild() in Angular 8+
+1min
+
+75. Getting Access to the Template &
+DOM with @ViewChild
+5min
+
+76. Projecting Content into Components
+with ng-content
+3min
+
+77. Understanding the Component
+Lifecycle
+5min
+
+78. Seeing Lifecycle Hooks in Action
+12min
+
+79. Lifecycle Hooks and Template Access
+3min
+
+80. @ContentChild() in Angular 8+
+1min
+
+81. Getting Access to ng-content with
+@ContentChild
+3min
+
+82. Wrap Up
+1min
+
+Assignment 4: Practicing Property &
+Event Binding and View Encapsulation
+
+83. [OPTIONAL] Assignment Solution
+12min
+
+
+
+Section 6: Course Project -
+Components & Databinding
+6 / 6|31min
+
+84. Introduction
+1min
+
+85. Adding Navigation with Event Binding
+and ngIf
+8min
+
+86. Passing Recipe Data with Property
+Binding
+5min
+
+87. Passing Data with Event and Property
+Binding (Combined)
+11min
+
+88. Make sure you have FormsModule
+added!
+1min
+
+89. Allowing the User to Add Ingredients
+to the Shopping List
+7min
+
+
+
+Section 7: Directives Deep Dive
+11 / 12|47min
+
+90. Module Introduction
+1min
+
+91. ngFor and ngIf Recap
+4min
+
+92. ngClass and ngStyle Recap
+3min
+
+93. Creating a Basic Attribute Directive
+7min
+
+94. Using the Renderer to build a Better
+Attribute Directive
+7min
+
+95. More about the Renderer
+1min
+
+96. Using HostListener to Listen to Host
+Events
+3min
+
+97. Using HostBinding to Bind to Host
+Properties
+3min
+
+98. Binding to Directive Properties
+7min
+
+99. What Happens behind the Scenes on
+Structural Directives
+3min
+
+100. Building a Structural Directive
+6min
+
+101. Understanding ngSwitch
+3min
+
+
+
+Section 8: Course Project - Directives
+1 / 2|7min
+
+102. Building and Using a Dropdown
+Directive
+6min
+
+103. Closing the Dropdown From
+Anywhere
+1min
+
+
+
+Section 9: Using Services &
+Dependency Injection
+10 / 12|45min
+
+104. Module Introduction
+2min
+
+105. Why would you Need Services?
+2min
+
+106. Creating a Logging Service
+4min
+
+107. Injecting the Logging Service into
+Components
+6min
+
+108. Creating a Data Service
+7min
+
+109. Understanding the Hierarchical
+Injector
+3min
+
+110. How many Instances of Service
+Should It Be?
+2min
+
+111. Injecting Services into Services
+5min
+
+112. Using Services for Cross-Component
+Communication
+4min
+
+113. Services in Angular 6+
+1min
+
+Assignment 5: Practicing Services
+
+114. [OPTIONAL] Assignment Solution
+10min
+
+
+
+
+Section 10: Course Project - Services
+& Dependency Injection
+8 / 8|31min
+
+115. Introduction
+1min
+
+116. Setting up the Services
+1min
+
+117. Managing Recipes in a Recipe Service
+4min
+
+118. Using a Service for
+Cross-Component Communication
+5min
+
+119. Adding the Shopping List Service
+5min
+
+120. Using Services for Pushing Data from
+A to B
+3min
+
+121. Adding Ingredients to Recipes
+4min
+
+122. Passing Ingredients from Recipes to
+the Shopping List (via a Service)
+7min
+
+
+

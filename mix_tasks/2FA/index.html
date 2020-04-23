@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <title>2FA</title>
+</head>
+<body>
+
+  <main>
+    <section>
+        <!-- <h1>Вы успешно зарегистрированы</h1>
+
+        <p>{{ greeting }}</p>
+        <p>Вы успешно зарегистрированы на Payop.com. Мы рады видеть Вас среди своих клиентов. Для начала работы пожалуйста, перейдите по ссылке и подтвердите <a href="{{ base_url }}{{ lang }}/auth/user-activate/{{email}}/{{token}}">email</a>.</p>
+        <p>Для продолжения работы верифицируйте Персональный аккаунт и / или аккаунт Компании - для этого заполните данные и загрузите необходимые документы по ссылкам ниже.</p>
+        <p><a href="{{ base_url }}{{ lang }}/profile/verification/personal/">Перейти к верификации Персонального аккаунта <span style="font-size: 26px;">→</span></a></p>
+        <p><a href="{{ base_url }}{{ lang }}/profile/verification/company/">Перейти к верификации аккаунта Компании <span style="font-size: 26px;">→</span></a></p>
+    
+        <p>Одновременно с верификацией аккаунта Вы можете оставить заявку на верификацию проекта и начать прием платежей в течение 1 рабочего дня! Добавлять проекты может как владелец Персонального аккаунта, так и владелец Компании.</p>
+    
+        <p><a href="{{ base_url }}{{ lang }}/profile/projects/">Перейти к верификации проекта <span style="font-size: 26px;">→</span></a></p>
+    
+        <p>Также в аккаунте Вы можете включить необходимые Вам способы оплаты. Для получения актуальной информации о наших ценах и комиссиях, пожалуйста, посетите наш <a href="{{ base_url }}{{ lang }}/pricing/">прайсинг</a>. Обратите внимание, что комиссии могут незначительно отличаться в зависимости от сферы и уровня риска Вашего бизнеса.</p>
+    
+        <p><a href="{{ base_url }}{{ lang }}/profile/payment-methods/">Список платежных методов доступных по умолчанию <span style="font-size: 26px;">→</span></a></p>
+        <p><a href="{{ base_url }}{{ lang }}/profile/payment-methods/">Список платежных методов для подключения которых нужно связаться с нами <span style="font-size: 26px;">→</span></a></p>
+    
+        <hr>
+    
+        <h1>У вас остались вопросы?</h1>
+    
+        <p>Вы можете получить дополнительную информацию о нашей системе на страницах <a href="{{ base_url }}{{ lang }}/faq/">FAQ</a>. Наша служба поддержки поможет вам с решением любого вопроса. Основной канал связи - это система <a href="{{ base_url }}{{ lang }}/profile/tickets/">Ticket system</a>. Пожалуйста, нажмите на гиперссылку, чтобы оставить нам сообщение. Альтернативные каналы по срочным вопросам:</p>
+    
+        <table style="width: 100%; border-collapse: inherit; border-spacing: 0 20px; font-size: 14px; line-height: 22px;">
+            <tr>
+                <td style="color:#929292">Skype:</td><td>support@payop.com</td>
+                <td style="color:#929292">Facebook:</td><td>@payopcom</td>
+            </tr>
+            <tr>
+                <td style="color:#929292">Telegram:</td><td>@PayOp</td>
+                <td></td><td></td>
+            </tr>
+        </table>
+    
+        <p>Если у Вас есть дополнительные вопросы, пожалуйста, обращайтесь к нам в любое время - мы будем рады Вам помочь.</p> -->
+    
+    </section>
+
+    <section class="section-letter">
+
+
+      <h2 style="line-height: 3">Two-Factor Authentication Activation (2FA)</h2>
+      <p style="line-height: 2">Dear merchant,</p>
+      <p style="line-height: 2">We received a request to turn on two-factor authentication for your account. If you did not do that, please ignore this email.</p>
+          
+      <a style="margin: 0 auto" href="{{ base_url }}{{ lang }}/auth/one-time-secret-key/{{ secretKey }}">
+        <button autofocus
+        style="background: #0b41be; color: #ffffff; height: 35px; min-width: 120px; border-radius: 5px; cursor: pointer; border: none; outline: none; margin: 20px; text-transform: none; display: block; position: relative;"
+        >Activate 2FA Now</button>
+      </a>
+      <p style="line-height: 1.5">If you have any questions, please, write to our support at <a href="support@payop.com">support@payop.com</a></p>
+      <p>Kind regards,</p>
+      <p>PayOp team</p>
+
+
+    </section>
+
+
+    <hr>
+
+
+    <section class="section-letter">
+
+
+      <h2 style="line-height: 3">Активация двухфакторной аутентификации (2FA)</h2>
+      <p style="line-height: 2">Уважаемый мерчант,</p>
+      <p>От вашего аккаунта поступил запрос на активацию двухфакторной аутентификации. Если это были не вы, пожалуйста, игнорируйте это письмо.</p>
+          
+      <a style="margin: 0 auto" href="{{ base_url }}{{ lang }}/auth/one-time-secret-key/{{ secretKey }}">
+        <button autofocus
+        style="background: #0b41be; color: #ffffff; height: 35px; min-width: 120px; border-radius: 5px; cursor: pointer; border: none; outline: none; margin: 20px; text-transform: none; display: block; position: relative;"
+        >Активировать 2FA</button>
+      </a>
+      <p style="line-height: 3">По любым вопросам Вы можете связаться с нашей службой поддержки: <a href="support@payop.com">support@payop.com</a></p>
+      <p>С уважением,</p>
+      <p>Команда PayOp</p>
+
+
+    </section>
+
+
+
+    <hr>
+
+
+    <section class="section-letter">
+
+
+      <h2 style="line-height: 3">Your One-time Authorization Code</h2>
+      <p style="line-height: 2">Dear merchant,</p>
+      <p>Good on you for keeping your account secure.</p>
+      <p>Here’s your one-time authorization code for the current browsing session:</p>
+      <p style="color: red"><b style="margin: 20px">{{123456}}</b></p>
+          
+      <p><b>What to do if you didn’t request this email</b></p>
+      <p>This email is sent automatically when you log into your PayOp account with two-factor authentication turned on. If you didn’t log in recently, then there’s a chance that someone else might be trying to get access to your account.</p>
+      <p><b>Please contact us immediately so we can make sure your data is safe: </b><a href="support@payop.com">support@payop.com</a></p>
+      <p>Kind regards,</p>
+      <p>PayOp Team</p>
+      
+
+
+    </section>
+
+
+
+    <hr>
+
+
+    <section class="section-letter">
+
+
+      <h2 style="line-height: 3">Одноразовый код авторизации</h2>
+      <p style="line-height: 2">Уважаемый мерчант,</p>
+      <p>Спасибо, что храните свой аккаунт в безопасности.</p>
+      <p>Ваш одноразовый код авторизации для этой сессии:</p>
+      <p style="color: red"><b style="margin: 20px">{{123456}}</b></p>
+          
+      <p><b>Что делать, если вы не запрашивали это письмо:</b></p>
+      <p>Это письмо отправляется автоматически, когда вы входите в свою учетную запись PayOp с подключенной двухфакторной аутентификацией. Если вы не совершали вход в аккаунт в последнее время, возможно, кто-то пытается получить доступ к вашей учетной записи.</p>
+      <p><b>Пожалуйста, немедленно свяжитесь с нами, чтобы мы могли убедиться в безопасности ваших данных: </b><a href="support@payop.com">support@payop.com</a></p>
+      <p>С уважением,</p>
+      <p>Команда PayOp</p>
+
+
+    </section>
+
+
+  </main>
+  
+</body>
+</html>
+
+
+
+<!-- {% extends "base.email.ru" %}
+{% block content %}
+    <p>Ваш код двухфакторной авторизации: {{ twoFACode }}</p>
+{% endblock %} -->

@@ -1,0 +1,33 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Avenir, sans-serif;
+}
+
+.section-letter {
+  height: 300px;
+  width: 600px;
+  margin: 20px;
+}
+
+
+/* .btn-submit {
+  background: #0b41be;
+  color: #ffffff;
+  height: 35px;
+  width: 105px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  text-transform: none;
+  min-width: 105px;
+  display:block;
+  position: relative;
+  margin:0 auto;
+} */
+

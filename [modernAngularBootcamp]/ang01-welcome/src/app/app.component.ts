@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from "./translate.service";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ang01-welcome';
+  inputText: string;
+  translatedText: string
+  constructor (private translateService: TranslateService) {}
+
+  submit() {
+    this.translateService.translate(this.inputText).subscribe((result) => {
+      this.translatedText = result;
+    })
+  }
 }

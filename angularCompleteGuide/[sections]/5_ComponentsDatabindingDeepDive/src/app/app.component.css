@@ -5,3 +5,7 @@
 p {
   color: blue;
 }
+
+.custom-btn {
+  margin-left: 5px;
+}
